@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Upload, FileImage, FileText, Scissors, Merge, RotateCw, Compress } from 'lucide-react';
+import { Upload, FileImage, FileText, Scissors, Merge, RotateCw, compress } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import FileUpload from '@/components/FileUpload';
@@ -157,7 +156,7 @@ const Index = () => {
           </Card>
           
           <Card className="p-6 text-center bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-            <Compress className="w-8 h-8 text-green-600 mx-auto mb-3" />
+            <compress className="w-8 h-8 text-green-600 mx-auto mb-3" />
             <h3 className="font-semibold mb-2">Compression</h3>
             <p className="text-sm text-gray-600">Reduce file sizes while maintaining quality</p>
           </Card>

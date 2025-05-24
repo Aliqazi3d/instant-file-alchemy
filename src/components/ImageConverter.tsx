@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Slider } from '@/components/ui/slider';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Download, RotateCw, Compress, Image as ImageIcon } from 'lucide-react';
+import { Download, RotateCw, compress, Image as ImageIcon } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 import { UploadedFile } from '@/pages/Index';
 
@@ -277,7 +276,7 @@ const ImageConverter: React.FC<ImageConverterProps> = ({ files }) => {
             </div>
 
             <Button onClick={compressImages} disabled={isProcessing} className="w-full" variant="outline">
-              <Compress className="w-4 h-4 mr-2" />
+              <compress className="w-4 h-4 mr-2" />
               {isProcessing ? 'Compressing...' : 'Compress Images'}
             </Button>
           </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-import { Download, Merge, Scissors, Compress, RotateCw, FileText, ArrowUp, ArrowDown } from 'lucide-react';
+import { Download, Merge, Scissors, compress, RotateCw, FileText, ArrowUp, ArrowDown } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 import { UploadedFile } from '@/pages/Index';
 
@@ -355,7 +354,7 @@ const PDFManipulator: React.FC<PDFManipulatorProps> = ({ files }) => {
         {/* Compression */}
         <div className="mt-8 pt-6 border-t">
           <h4 className="font-medium text-gray-900 flex items-center gap-2 mb-4">
-            <Compress className="w-5 h-5" />
+            <compress className="w-5 h-5" />
             Compress PDFs
           </h4>
           
@@ -378,12 +377,11 @@ const PDFManipulator: React.FC<PDFManipulatorProps> = ({ files }) => {
             
             <div className="flex items-end">
               <Button onClick={compressPDF} disabled={isProcessing} className="w-full">
-                <Compress className="w-4 h-4 mr-2" />
+                <compress className="w-4 h-4 mr-2" />
                 {isProcessing ? 'Compressing...' : 'Compress PDFs'}
               </Button>
             </div>
           </div>
-        </div>
 
         {/* Rotation */}
         <div className="mt-8 pt-6 border-t">
