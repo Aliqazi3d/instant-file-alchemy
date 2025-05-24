@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -382,6 +383,7 @@ const PDFManipulator: React.FC<PDFManipulatorProps> = ({ files }) => {
               </Button>
             </div>
           </div>
+        </div>
 
         {/* Rotation */}
         <div className="mt-8 pt-6 border-t">
